@@ -150,9 +150,9 @@ void showValue(int value) {
       CircuitPlayground.setPixelColor(i, 0, 255, 0); //Green for 2 pts
     }
     if (bust) {
-      CircuitPlayground.setPixelColor(LED_COUNT - 1, 255, 0, 0); //Red = bust
+      CircuitPlayground.setPixelColor(LED_COUNT - 1, 255, 0, 0); //Red if bust
     } else {
-      CircuitPlayground.setPixelColor(LED_COUNT - 1, 255, 255, 255); //White = 21
+      CircuitPlayground.setPixelColor(LED_COUNT - 1, 255, 255, 255); //White if exactly 21
     }
   } else {
     int greens = value / 2; //2 pts per green
